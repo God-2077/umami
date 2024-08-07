@@ -12,7 +12,7 @@ export function Favicon({ domain, ...props }) {
 
   return hostName ? (
     <img
-      src={`https://icons.duckduckgo.com/ip3/${hostName}.ico`}
+      src={`https://www.favicon.vip/get.php?url=${hostName}`}
       width={16}
       height={16}
       alt=""
