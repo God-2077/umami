@@ -12,7 +12,7 @@ export function Favicon({ domain, ...props }) {
 
   return hostName ? (
     <img
-      src={`https://www.favicon.vip/get.php?url=${hostName}`}
+      src={`https://unavatar.io/${hostName}`}
       width={16}
       height={16}
       alt=""
