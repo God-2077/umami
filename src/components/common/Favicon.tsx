@@ -11,8 +11,13 @@ export function Favicon({ domain, ...props }) {
   }
 
   const hostName = domain ? getHostName(domain) : null;
+
+  // 更新  ico  api
+  // const src = hostName
+  //   ? `https://icons.duckduckgo.com/ip3/${GROUPED_DOMAINS[hostName]?.domain || hostName}.ico`
+  //   : null;
   const src = hostName
-    ? `https://icons.duckduckgo.com/ip3/${GROUPED_DOMAINS[hostName]?.domain || hostName}.ico`
+    ? `https://ico.n3v.cn/get.php?url=${GROUPED_DOMAINS[hostName]?.domain || hostName}`
     : null;
 
   return hostName ? <img src={src} width={16} height={16} alt="" {...props} /> : null;
